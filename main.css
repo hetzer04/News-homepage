@@ -1,5 +1,74 @@
+@font-face{
+  font-family: Inter bold;
+  src: url('assets/fonts/static/Inter-Bold.ttf')
+}
+@font-face{
+  font-family: Inter regular;
+  src: url('assets/fonts/static/Inter-Regular.ttf')
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  font-size: 15px;
+  font-family: 'Inter regular';
+  background-color: hsl(36, 100%, 99%);
+}
+.wraper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 50px 0;
+}
+.logo{
+  width: 60px;
+  height: 40px;
+}
+.nav-item{
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.nav-item:hover{
+  color: hsl(5, 85%, 63%);
+}
+.main-new{
+  display: flex;
+}
+.chapter{
+  width: 650px;
+}
+.text-block{
+  display: flex;
+  padding: 10px 0;
+}
+.text-block > h1{
+  font-family: Inter bold;
+  width: 50%;
+  font-size: 3.5rem;
+  line-height: 55px;
+  font-weight: bold;
+}
+.span{
+  width: 50%;
+  font-size: 0.85rem;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.more{
+  
 }
