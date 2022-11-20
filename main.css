@@ -11,6 +11,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+img{
+  user-select: none;
+}
 body{
   font-size: 15px;
   font-family: 'Inter regular';
@@ -53,6 +56,13 @@ nav{
 .chapter{
   width: 650px;
 }
+.main-new_img{
+  width: 650px;
+  height: 250px;
+  background-image: url(assets/images/image-web-3-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .text-block{
   display: flex;
   padding: 20px 0;
@@ -79,6 +89,10 @@ nav{
   background-color: hsl(5, 85%, 63%);
   display:table;
 }
+.more:hover{
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
 .more > p{
   font-family: Inter bold;
   color: hsl(36, 100%, 99%);
@@ -102,6 +116,10 @@ nav{
 .block-new_new > h3{
   font-family: Inter bold;
   color: hsl(36, 100%, 99%);
+}
+.block-new_new > h3:hover{
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 .block-new_new > h4{
   padding: 7px 0;
@@ -145,8 +163,59 @@ nav{
   font-size: 0.95rem;
   font-family: Inter bold;
 }
+.new1__block-text > h3:hover{
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
 .new1__block-text > h4{
   font-size: 0.75rem;
   line-height: 20px;  
   color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 375px){
+  nav{
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .wraper{
+    width: 350px;
+  }
+  .chapter{
+    width: auto;
+  }
+  .text-block{
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .main-new{
+    flex-direction: column;
+  }
+  .block-new{
+    margin: 0;
+    height: 500px;
+  }
+  .main-new_img{
+    margin: 0 auto;
+    width: 350px;
+    height: 300px;
+    background-image: url(assets/images/image-web-3-mobile.jpg);
+  }
+  .text-block > h1 {
+    width: auto;
+  }
+  .span{
+    width: auto;
+    padding: 20px 0;
+  }
+  .more{
+    margin-top: 20px;
+  }
+  .new1{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+  }
+  .new1-block{
+    margin-left: 0;
+  }
 }
